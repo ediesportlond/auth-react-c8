@@ -11,8 +11,11 @@ export default function Profile({ user, token, setUser }) {
       },
       body: JSON.stringify(values),
     })
-      .then(response => response.json())
-      .then(setUser)
+    .then(()=>{
+      alert('Profile updated')
+    })
+      // .then(response => response.json())
+      // .then(setUser)
       .catch(alert)
   }
   return (
